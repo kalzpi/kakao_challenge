@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'NanumGothic';
+    font-size:20px;
+    font-weight: bold;
+    background-color: black;
+    color:#686868;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-lg {
+    font-size:26px;
+}
+
+.font-sm {
+    font-size:14px;
+}
+
+.font-xs {
+    font-size: 12px;
+}
+
+.friends {
+    height:100vh;
+    width: 476px;
+    background-color: white;
+    position:relative
+}
+
+section {
+    padding: 18px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+   font-size:16px;
+   font-weight:bold;
+}
+
+.nav--top {
+    padding: 5px 18px;
+    justify-content: space-between;
+}
+
+.nav__left {
+    display: flex;
+    gap:6px;
+}
+
+.nav__right {
+    display: flex;
+    gap:6px;
+}
+
+header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    font-weight: bolder;
+}
+
+.header__icons {
+    display: flex;
+    gap: 20px;
+}
+
+.avatar {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius:40%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.avatar--lg {
+    height: 65px;
+    width: 65px;
+    margin-right: 20px;
+}
+
+.avatar--add {
+    color:#717171;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:22px;
+    margin-right: 15px;
+}
+
+.friends__me {
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    padding:18px;
+    display: flex;
+    align-items: center;
+}
+
+section>.title{
+    opacity: 0.7;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section>.content{
+    display: flex;
+    align-items: center;
+}
+
+.horizontal_list {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.updated_friend{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap:8px;
+    position: relative;
+}
+
+.avatar_marker {
+    background-color: red;
+    height:5px;
+    width:5px;
+    border-radius: 100%;
+    position:absolute;
+    left:0;
+    filter: blur(1px);
+}
+
+footer{
+    border-top: 1px solid rgb(243, 243, 243);
+    background-color: #f2f2f2;
+    position: absolute;
+    height:60px;
+    width: 100%;
+    bottom:0;
+}
