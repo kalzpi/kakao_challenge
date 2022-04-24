@@ -16,11 +16,12 @@
       src="https://kit.fontawesome.com/ddce6f7cd5.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Kakao Talk</title>
   </head>
   <body>
-    <main class="friends">
+    <main class="friends_page">
       <nav class="nav nav--top font-sm">
         <div class="nav__left">
           <span class="">KT 3:07</span>
@@ -46,7 +47,7 @@
           <i class="fa-solid fa-gear"></i>
         </div>
       </header>
-      <div class="content">
+      <div class="main_container">
         <section class="friends__me">
           <img
             class="avatar avatar--lg"
@@ -61,10 +62,12 @@
             <i class="fa-solid fa-angle-up"></i>
           </div>
           <div class="content">
-            <div class="avatar avatar--add">
-              <i class="fa-solid fa-plus"></i>
+            <div class="flex">
+              <div class="avatar avatar--solo avatar--add">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="">친구별로 다른 프로필을 설정해보세요!</div>
             </div>
-            <div class="">친구별로 다른 프로필을 설정해보세요!</div>
           </div>
         </section>
         <section>
@@ -125,11 +128,35 @@
             <span class="">생일인 친구</span>
             <i class="fa-solid fa-angle-up"></i>
           </div>
+          <div class="content">
+            <div class="flex">
+              <div class="avatar avatar--solo avatar--birth">
+                <i class="fa-solid fa-cake-candles"></i>
+              </div>
+              <div class="">친구의 생일을확인하세요!</div>
+            </div>
+            <div class="list_more">
+              <span class="">2</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
         </section>
         <section>
           <div class="title font-sm">
             <span class="">추천친구</span>
             <i class="fa-solid fa-angle-up"></i>
+          </div>
+          <div class="content">
+            <div class="flex">
+              <div class="avatar avatar--solo avatar--recommend">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <div class="">새로운 친구를 만나보세요!</div>
+            </div>
+            <div class="list_more">
+              <span class="">134</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
           </div>
         </section>
         <section>
@@ -137,10 +164,75 @@
             <span class="">친구</span>
             <i class="fa-solid fa-angle-up"></i>
           </div>
+          <ul class="friends_vertical_list">
+            <li class="friend">
+              <img
+                class="avatar"
+                src="https://w.namu.la/s/175e1efe0647be4ea054dd44a41c803ee89c2a87833d40df9e9569dffdd3f02e9925aa913f572f9e72414bb6e4012fe00eb2965ba9927bced09004c3228882b572caf1e08a769145e1ba7e78a66d74f8"
+                alt=""
+              />
+              <div class="friend_info">
+                <div class="friend_name">간 옹</div>
+              </div>
+            </li>
+            <li class="friend">
+              <img
+                class="avatar"
+                src="https://w.namu.la/s/a698cae0afe3b17c8295f3bc33f0f7cf9bedb3fbaacc5081fdf211f4b9b9fc088a13a23943c4420679e8271654ae8f4011d92685f4ceb273d8cc21470e71f75d60827bdcfee74acf60444e25c08b906e"
+                alt=""
+              />
+              <div class="friend_info">
+                <div class="friend_name">관 우</div>
+                <div class="friend_bio">이 술잔이 식기 전에 돌아오겠소!</div>
+              </div>
+            </li>
+            <li class="friend">
+              <img
+                class="avatar"
+                src="https://w.namu.la/s/8f1a2b7e2315ae608d6efabe2e5e52c43288d97764895c31ab77a10ed1aa2fa3f3de2936eb17cad9e56b183cc8c0b8b45867e7c5139b08da5ff82f32a9648d98bc7ef825876551b54b2fe5eb76b7c216188765ea51add8f06debf9ca7abd38a1"
+                alt=""
+              />
+              <div class="friend_info">
+                <div class="friend_name">마 초</div>
+              </div>
+            </li>
+            <li class="friend">
+              <img
+                class="avatar"
+                src="	
+                https://images.mir.pe/file/ede6153017fa973c9d712a37e1a4b10bb8116435dbe6767969e5bcd3bdfb7e1d4ec998e894ba14ea27c4a1a5fceacb7e"
+                alt=""
+              />
+              <div class="friend_info">
+                <div class="friend_name">방 통</div>
+              </div>
+            </li>
+            <li class="friend">
+              <img
+                class="avatar"
+                src="	
+                https://w.namu.la/s/a4296a6e91a2d93735b0edd7c1ac17c8084cbdb3aea362bcc2865c4c5e84fdddded35f1376be0f728203f0bc31f13aaa5537e33bc50940315a2729a3c054ebb5ab7d8d3886eec3f26600f2e3caab6c0a5cbc701c25915d7e14a978188a5a26c5"
+                alt=""
+              />
+              <div class="friend_info">
+                <div class="friend_name">손 권</div>
+              </div>
+            </li>
+          </ul>
         </section>
       </div>
+      <footer>
+        <a href="" class=""><i class="fa-solid fa-user-group"></i></a>
 
-      <footer></footer>
+        <a class="link_chat" href="./chats.html">
+          <div class="">22</div>
+          <i class="fa-solid fa-comment"></i>
+        </a>
+
+        <a href="" class=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="" class=""><i class="fa-solid fa-ellipsis"></i></a>
+      </footer>
+      <div id="splash_screen"><i class="fa-solid fa-comment"></i></div>
     </main>
   </body>
 </html>

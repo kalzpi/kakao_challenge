@@ -1,0 +1,93 @@
+.chat_preview_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chat_preview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat_preview__content {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.chat_preview__content__title {
+  font-size: 16px;
+}
+
+.chat_preview__content__chat {
+  font-size: 12px;
+  opacity: 0.7;
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chat_preview__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+.chat_preview__info__time {
+  font-size: 10px;
+  opacity: 0.6;
+  position: absolute;
+  top: 10px;
+  width: max-content;
+}
+
+.chat_preview__info__count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #de6347;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 7.5px;
+  width: min-content;
+  font-size: 10px;
+  font-weight: lighter;
+  margin-right: 5px;
+  position: absolute;
+  bottom: 2px;
+}
+
+.chat_preview__multiple_avatars {
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+
+.chat_preview__multiple_avatars__avatar {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  border-radius: 40%;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: absolute;
+}
+
+.chat_preview__multiple_avatars__avatar:first-child {
+  top: 0;
+  left: 10px;
+}
+
+.chat_preview__multiple_avatars__avatar:nth-child(2) {
+  bottom: 0;
+  left: 0;
+}
+
+.chat_preview__multiple_avatars__avatar:nth-child(3) {
+  bottom: 0;
+  right: 0;
+}

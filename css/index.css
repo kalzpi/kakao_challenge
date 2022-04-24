@@ -1,0 +1,79 @@
+.friends__me {
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+}
+
+section > .title {
+  opacity: 0.7;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section > .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.horizontal_list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.updated_friend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.avatar_marker {
+  background-color: red;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  filter: blur(1px);
+}
+
+.list_more {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 0.6;
+}
+
+.friends_vertical_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.friend_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.friend_name {
+  font-size: 16px;
+}
+
+.friend_bio {
+  opacity: 0.5;
+  font-size: 12px;
+}
