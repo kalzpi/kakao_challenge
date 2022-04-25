@@ -1,0 +1,89 @@
+.shopping_container__menu {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(222, 222, 222);
+    padding: 15px 0;
+}
+
+.shopping_container__menu__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.shopping_container__menu__icon>i{
+    font-size:30px;
+}
+
+.shopping_container__menu__icon>span{
+    font-size:12px;
+}
+
+.shopping_container__banners{
+    width: 476px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.shopping_container__banners__banner{
+    position: relative;
+    cursor: pointer;
+}
+
+.shopping_container__banners__banner>.shopping_container__banners__banner__title,
+.shopping_container__banners__banner>.shopping_container__banners__banner__description{
+    position: absolute;
+    color:white;
+}
+
+.shopping_container__banners__banner>.shopping_container__banners__banner__title{
+    font-size: px;
+    top:35px;
+    left:25px;
+}
+
+.shopping_container__banners__banner>.shopping_container__banners__banner__description{
+    right: 15px;
+    bottom: 35px;
+    font-size:18px;
+}
+
+.shopping_container__banners__banner>img {
+    max-width: 476px;
+    object-fit: cover;
+}
+
+.shopping_container__usermenu {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    justify-content: space-between;
+    border-bottom: 10px solid #f0f0f0;
+}
+
+.shopping_container__usermenu__user {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.shopping_container__usermenu__user>img{
+    margin-right: 10px;
+}
+
+.shopping_container__usermenu__user__misc{
+    opacity: 0.7;
+    margin-right: 10px;
+}
+
+.shopping_container__usermenu__menu {
+    font-size:13px;
+    display: flex;
+    gap: 15px;
+}
+
+.shopping_container__usermenu__menu>span{
+    cursor: pointer;
+}
